@@ -1,0 +1,12 @@
+<div>
+  <button (click)="isBase64Visible = !isBase64Visible">
+    Base64
+  </button>
+
+  <button (click)="isImageVisible = !isImageVisible">
+    Image
+  </button>
+</div>
+
+<app-load-on-action-base64 *ngIf="isBase64Visible"></app-load-on-action-base64>
+<app-load-on-action-images *ngIf="isImageVisible"></app-load-on-action-images>
